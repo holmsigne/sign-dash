@@ -148,7 +148,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
    /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    color: rgb(116, 218, 124);
   }
   
   /* Typography –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -345,7 +345,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   th, td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid #bcffbc;
   }
   th:first-child, td:first-child {
     padding-left: 0;
@@ -386,7 +386,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid #bcffbc;
   }
   /* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
   /* Self Clearing Goodness */
@@ -419,8 +419,8 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   }
   
   body {
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #bcffbc;
+    color: #bcffbc;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -446,7 +446,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     text-decoration: none;
   }
   .bg-grey{
-    background-color: #ffffff;
+    background-color: #bcffbc;
   }
   .text-padding{
     padding: 5px;

@@ -33,7 +33,7 @@ fig_employee = px.bar(order,
     text='total', title='Sales by Employee',
     hover_data=[],
     labels={'total':'Total sales', 'employee':'Employee', 'type':'Product Type'})
-fig_employee.update_traces(texttemplate='%{text:.2s}', textposition='outside')
+fig_employee.update_traces(texttemplate='%{text:.5s}', textposition='outside')
 fig_employee.update_layout(uniformtext_minsize=8, uniformtext_mode='hide', xaxis_tickangle=45)
 
 fig_product = px.bar(order, 
@@ -42,7 +42,7 @@ fig_product = px.bar(order,
     text='total', title='Sales by Product',
     hover_data=[],
     labels={'total':'Total sales', 'productname':'Product', 'type':'Product Type'})
-fig_product.update_traces(texttemplate='%{text:.2s}', textposition='outside')
+fig_product.update_traces(texttemplate='%{text:.5s}', textposition='outside')
 fig_product.update_layout(uniformtext_minsize=8, uniformtext_mode='hide', xaxis_tickangle=45)
 
 # ***************************************
