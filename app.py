@@ -24,8 +24,8 @@ fig_employee = px.bar(order,
     title='Sales by Employee',
     hover_data=[], 
     labels={'total':'Total sales', 'employee':'Employee', 'type':'Product Type'})
-fig_employee.update_traces(texttemplate='%{text:0.3s}', textposition='outside')
-fig_employee.update_layout(uniformtext_minsize=5, uniformtext_mode='hide', xaxis_tickangle=80)
+fig_employee.update_traces(texttemplate='%{text:0.3s}', textposition='outside', textfont_size=8)
+fig_employee.update_layout(uniformtext_minsize=5, uniformtext_mode='hide', xaxis_tickangle=70)
 
 fig_product = px.bar(order, 
     x='productname', 
@@ -36,8 +36,8 @@ fig_product = px.bar(order,
     title='Sales by Product',
     hover_data=[],
     labels={'total':'Total sales', 'productname':'Product', 'type':'Product Type'})
-fig_product.update_traces(texttemplate='%{text:0.2s}', textposition='outside')
-fig_product.update_layout(uniformtext_minsize=5, uniformtext_mode='hide', xaxis_tickangle=80)
+fig_product.update_traces(texttemplate='%{text:0.2s}', textposition='outside', textfont_size=8)
+fig_product.update_layout(uniformtext_minsize=5, uniformtext_mode='hide', xaxis_tickangle=70)
 
 dash_app = dash.Dash(__name__)
 app = dash_app.server
@@ -46,7 +46,7 @@ app = dash_app.server
 dash_app.layout = html.Div(
     children=[
         html.Div(className='row',
-                children=[html.Div(className='eight columns div-for-charts bg-grey',
+                children=[html.Div(className='div-for-charts bg-grey',
                             children=[
                                 dcc.Graph(id="sales_employee", figure=fig_employee),
                                 dcc.Graph(id="sales_product", figure=fig_product)
