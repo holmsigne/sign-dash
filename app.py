@@ -2,11 +2,14 @@ import dash
 from dash import html
 from dash import dcc
 from dash.dependencies import Input, Output
+
 import pandas as pd
 import numpy as np
 import calendar
+
 import plotly.express as px
 import plotly.graph_objects as go
+
 import datamodel
 order = datamodel.get_data()
 df_year = datamodel.get_year()
