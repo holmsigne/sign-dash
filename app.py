@@ -30,10 +30,11 @@ df_month = datamodel.get_month()
 fig_employee = px.bar(order, 
     x='employee', y='total', 
     color='type', 
-    text='total', title='Sales by Employee',
+    text='total', 
+    title='Sales by Employee',
     hover_data=[],
     labels={'total':'Total sales', 'employee':'Employee', 'type':'Product Type'})
-fig_employee.update_traces(texttemplate='%{text:0.2s}', textposition='outside')
+fig_employee.update_traces(texttemplate='%{text:0.3s}', textposition='outside')
 fig_employee.update_layout(uniformtext_minsize=8, uniformtext_mode='hide', xaxis_tickangle=45)
 
 fig_product = px.bar(order, 
