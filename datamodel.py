@@ -19,10 +19,10 @@ df_products = pd.read_excel(githubpath + "fake_data.xlsx", sheet_name="products"
 
 def get_data():
     # Employee name
-    df_employee['emp_name'] = df_employee['firstname'] + ' ' + df_employee['lastname']
+    df_employee['employee'] = df_employee['firstname'] + ' ' + df_employee['lastname']
 
     # Customers name
-    df_customers['cust_name'] = df_customers['first_name'] + ' ' + df_customers['last_name']
+    df_customers['customer'] = df_customers['first_name'] + ' ' + df_customers['last_name']
 
     # Data - Add: total, order, year, month
     df_order['total'] = df_order['unitprice'] * df_order['quantity']
@@ -41,8 +41,8 @@ def get_data():
     # Order - Select colomns
     order = order[['order_id', 
                 'product_id', 'productname', 'type',
-                'customer_id', 'cust_name', 'city', 'country',
-                'employee_id', 'emp_name', 
+                'customer_id', 'customer', 'city', 'country',
+                'employee_id', 'employee', 
                 'orderdate', 'deliverydate', 'deliverytime', 'orderyear', 'ordermonth',
                 'total']]
 
