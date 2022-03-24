@@ -28,7 +28,7 @@ df_month = datamodel.get_month()
 # Diagram - Employee Sales
 # ***************************************
 fig_employee = px.bar(order, 
-    x='emp_name', y='total', 
+    x='total', y='emp_name', 
     color='type', text='total', title='Sales by Employee',
     hover_data=[],
     labels={'total':'Total sales', 'emp_name':'Employee', 'type':'Product Type'})
