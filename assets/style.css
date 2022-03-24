@@ -40,7 +40,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   /* For devices larger than 550px */
   @media (min-width: 550px) {
     .container {
-        width: 80%;
+        width: 90%;
    }
     .column, .columns {
         margin-left: 4%;
@@ -345,7 +345,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   th, td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #bcffbc;
+    border-bottom: 1px solid #f0f0f0;
   }
   th:first-child, td:first-child {
     padding-left: 0;
@@ -386,7 +386,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     margin-top: 3rem;
     margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid #bcffbc;
+    border-top: 1px solid #f0f0f0;
   }
   /* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
   /* Self Clearing Goodness */
@@ -419,8 +419,8 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   }
   
   body {
-    background-color: #bcffbc;
-    color: #bcffbc;
+    background-color: #f0f0f0;
+    color: #f0f0f0;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -446,7 +446,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     text-decoration: none;
   }
   .bg-grey{
-    background-color: #bcffbc;
+    background-color: #f0f0f0;
   }
   .text-padding{
     padding: 5px;
