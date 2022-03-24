@@ -12,8 +12,8 @@ import plotly.graph_objects as go
 
 import datamodel
 order = datamodel.get_data()
-df_year = datamodel.get_year()
-df_month = datamodel.get_month()
+#df_year = datamodel.get_year()
+#df_month = datamodel.get_month()
 
 fig_employee = px.bar(order, 
     x='employee', 
